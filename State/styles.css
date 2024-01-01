@@ -1,0 +1,227 @@
+/* State/styles.css */
+/*global styles*/
+/*body styles*/
+body {
+    background-color: #ffffff; /* Light background color */
+    color: #000000; /* Dark text color */
+    font-family: 'Arial', sans-serif; /* Choose a modern font */
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    min-height: 100hv;
+    display:flex;
+  }
+  /*this will ensure that the footer is always at the botttom of the screen*/
+  .wrapper {
+    flex: 1;
+  }
+
+  /*header styles*/
+.fancy-header {
+  font-family: Lucida calligraphy; /* Replace 'Your Fancy Font' with the actual font name */
+  font-size: 4em; /* Adjust the font size as needed */
+  color: white; /* Text color */
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8); /* Shadow effect */
+  position: absolute;
+  top: 50%; /* Position at the vertical center */
+  left: 50%; /* Position at the horizontal center */
+  transform: translate(-50%, -50%); /* Center the text exactly over the image */
+  z-index: 2; /* Ensure the text is above the image */
+}
+body, h1, h2, p, div, img {
+margin: 1px;
+padding: 1px;
+}
+header {
+  position: relative;
+  width: 100%; /* Set the header to the full viewport height */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px;
+  z-index: 1000;
+}
+
+/*nav styles*/
+nav {
+    font-weight: bold;
+    font-size: large;
+    background: linear-gradient(to right, #ececec, #e25f07);
+    padding: 10px;
+    text-align: right;
+}
+
+/* Styles for the dropdown */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Styles for the dropdown content */
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li .dropdown-content li {
+    display: block;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+/*img banner styles*/
+.banner {
+    width: Auto; /* Adjust as needed */
+    height: 200px; /* Set a fixed height */
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto; /* Center the container */
+  }
+
+  .banner img {
+    width: 80%; /* Allow width to adjust according to height */
+    max-height: 300px; /* Take up 100% of the container height */
+    display: inline-block; /* Span the image across the container */
+    vertical-align: middle; /* Align image within the container */
+    margin-left: 1px; /* Adjust spacing between images */
+    margin-right: 1px; /* Adjust spacing between images */
+    animation: scroll 30s linear infinite; /* Scroll animation */
+    padding: 1px; /* Adjust spacing between images */
+  }
+/*img animation*/
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+  /*img styles*/
+img {
+    max-width: auto;
+    height: auto;
+    padding: 1px;
+}
+/* Section Styles */
+section {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 0px;
+}
+/* Styles for your main content */
+#mainContent {
+    float: left;
+    width: 70%; /* Adjust the width of the main content */
+    height:auto;
+}
+
+/* Styles for your aside */
+aside {
+    float: right;
+    width: 30%; /* Adjust the width of the aside */
+    height: auto; /* Set aside height to 100% of the viewport height */
+    overflow-y: scroll;/* Enable vertical scrolling */
+    background-color: #f0f0f0; /* Optional: Add background color for better visibility */
+}
+aside nav ul {
+    list-style-type: none;
+}
+aside nav li {
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+/*container styles*/
+.container {
+    max-width: 1200px;
+    background-color: #fff;
+    margin: auto;
+}
+/*table styles*/
+table {
+    width: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+/* Apply styles to form container */
+#myForm {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Style labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Style text inputs and textareas */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Style submit button */
+input[type="submit"] {
+    background-color: #743420;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Change submit button color on hover */
+input[type="submit"]:hover {
+    background-color: #ce4b24;
+}
+/*footer styles*/
+footer {
+    position: bottom;
+    background: linear-gradient(to right, #ececec, #e25f07);
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    bottom: auto;
+    padding: 10px;
+}
